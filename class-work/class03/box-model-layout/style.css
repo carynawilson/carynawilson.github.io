@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+#gray-box{
+    background: lightgray;
+    margin: 20px;
+    padding: 10px 10px 10px 20px;
+    border-width: 10px;
+}
+#menu{
+    background: black;
+    color: white;
+    margin: 5px 5px 25px 5px;
+    padding: 10px;
+    border-width: 5px;
+}
+.tomato-box{
+    background: tomato;
+    margin: 10px 5px;
+    padding: 6px 5px;
+    border-width: 5px;
+}
+#purple-text{
+    color: purple
+}
+#green-text{
+    color: green
+}
+#yellow-text{
+    color: yellow
+}

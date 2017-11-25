@@ -1,3 +1,6 @@
 body {
-    background: red;
+    input[type="submit"] {
+        background: red;
+        color: white;
+      }
 }
