@@ -1,0 +1,52 @@
+body{
+    width: 720px;
+    padding: 54px;
+    font-family: lato;
+    color:  #444444;
+    height: 1.5em;
+}
+header{
+    color: #DD0000;
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+.kicker{
+    color: black;
+    margin: 10px 0;
+
+}
+nav{
+    color: #dddddd;
+}
+nav a{
+    margin-right: 10px;
+}
+nav a:hover{
+    color: black;
+}
+
+.date{
+    color: #cccccc;
+    font-size: 25px;
+    margin-top: 40px;
+}
+.article-title{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.copyright{
+    color: #bbbbbb;
+    margin-top: 20px;
+}
+.image{
+    display: inline;
+    
+}
+.continue{
+    color: #DD0000;
+    text-align: right;
+    text-decoration: none;
+    font-style: bold;
+ }
