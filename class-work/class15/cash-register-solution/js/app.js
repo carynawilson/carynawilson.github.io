@@ -14,20 +14,31 @@
 // 7: Empty the input in #newEntry (clear it out)
 
 $(document).ready(function () {
-   var total = 0;
-    $('#entry').submit(function (event) {
-        event.preventDefault();
-        var newEntry = parseFloat($('#newEntry').val());
-        // var total = $('#total').html(newEntry);
-    
-        // var oldEntry = $('#entries').val();
-        // var newEntry = parseFloat('');
-        $('#entries').append('<tr>' + '<td>' + '</td>' + '<td>' + (newEntry) + '</td>' + '</tr>');
-total = total + newEntry;
-        $('#total').text('$' + total);
-        // $('#total').html(total);
-        $('#newEntry').val('');
+	// 6: keep track of your program's state by defining a total variable
+	var total = 0;
 
+	// 1: add .submit to #entry
+	$('#entry').submit(function (event) {
+		// 2: prevent submit's default behavior
+		event.preventDefault();
 
-    })
+		// 3: create a variable, newEntry, to store user input from #newEntry
+		var newEntry = $('#newEntry').val();
+
+		// 4: call parseFlot on newEntry to transform it from a string to a number
+		newEntry = parseFloat(newEntry);
+
+		// 5: append a new <tr> to #entries
+		$('#entries').append('<tr><td></td><td>' + newEntry + '</td></tr>');
+
+		// 6: update total variable
+		total = total + newEntry;
+
+		// 6 (ctn): update #total element
+		$('#total').text('$' + total);
+
+		// 7: clear #newEntry
+		$('#newEntry').val('');
+	});
+
 })
