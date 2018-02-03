@@ -3,31 +3,90 @@
 
 <head>
     <title> Caryn Wilson </title>
-    <link rel="stylesheet" href="style.css">  
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-   <header>
-    <h1> Caryn A. Wilson </h1>
-    <div class="vertical-menu">
-        <a href=""> About & Contact </a> 
-        <a href=""> Projects </a> 
-        <a href=""> Interests </a> 
-        <!-- <a href="">  </a>  -->
-    </div>
-</header>
-<main>
-<!-- add center photo -->
+    <header>
+        <h1 class="h1-name"> <span class="first-name">Caryn </span>A. <span class="last-name">Wilson</span> </h1>
+        <img class="image profile-pic" src="IMG_1924.JPG" alt="Smiley face">
+        <span>
+            I'm a multidisciplinary journalist working in New York City. vision vision vision vision.
+        </span>
+        <nav class="vertical-menu">
+            <a href="#contact-footer"> About & Contact </a>
+            <a href=""> Projects </a>
+            <a href=""> tktktk </a>
+        </nav>
+        <h2></h2>
+    </header>
+    <main>
+        <div class="grid">
+            <article>
+                <a href="https://nyti.ms/2klgkiV" target="_blank">
+                    <div class="image-wrap">
+                        <img class="article-image image" src="imgs/germanyattacks2.jpg">
+                    </div>
+                    <div class="content">
+                        <span> The New York Times</span>
+                        |
+                        <span>July 26, 2016</span>
+                        <h2>Week of Violence Rattles Germany</h2>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="https://nyti.ms/2jIq0Bv" target="_blank">
+                    <div class="image-wrap">
+                        <img class="article-image image" src="imgs/italy-earthquake.jpg">
+                    </div>
+                    <div class="content">
+                        <span> The New York Times</span>
+                        |
+                        <span>August 24, 2016</span>
+                        <h2>Italy’s History of Deadly Earthquakes</h2>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="https://nyti.ms/2FCeijN" target="_blank">
+                    <div class="image-wrap">
+                        <img class="article-image image" src="imgs/gilkey1-jumbo.jpg">
+                    </div>
+                    <div class="content">
+                        <span> The New York Times</span>
+                        |
+                        <span>June 6, 2016</span>
+                        <h2>The Work of David Gilkey, NPR Journalist Killed in Afghanistan</h2>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="https://nyti.ms/2kwfsm5" target="_blank">
+                    <div class="image-wrap">
+                        <img class="article-image image" src="imgs/UN-explainer2.jpg">
+                    </div>
+                    <div class="content">
+                        <span> The New York Times</span>
+                        |
+                        <span>September 18, 2016</span>
+                        <h2>The United Nations Explained: Its Purpose, Power and Problems</h2>
+                    </div>
+                </a>
+            </article>
+        </div>
 
 
-
-
-
-
-
-    
-</main>
-    <script src="app.js"></script>
+    </main>
+    <footer id="contact-footer">
+        <input type="email" placeholder="Your email">
+        <input type="submit">
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
