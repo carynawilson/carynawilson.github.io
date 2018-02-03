@@ -3,72 +3,111 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+article a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.h1-wrap {
+    min-height: 70px;
+}
+
 h1 {
     display: block;
     color: black;
     text-align: center;
     font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
+
+.first-name {
+    width: 130px;
+}
+
+.kanye {
+    width: 30px;
+}
+
+.last-name {
+    width: 130px;
+}
+
 .hover {
     color: plum;
-  }
+}
 
-  .profile-pic{
-      width: 82px;
+.profile-pic {
+    width: 82px;
+    display: block;
+    align-content: center;
+}
 
-  }
-
-.vertical-menu a {
+.vision-statement {
+    text-align: center;
+}
+nav {
     color: black;
     margin-right: 20px;
-    text-decoration: none;
     font: "Lato";
-    display: block;
-    padding: 10px;
-    width: 200px;
-    /* text-transform: uppercase; */
+   background-color: lightgray;
     font-weight: bold;
-    position: relative;
+    position: fixed;
+    width: 100%;
+	left: 0;
+	top: 0;
+    font-size: 20px;
+    text-decoration: none;
+    
+	/* transition: all 2s ease-in-out; */
 }
 
-.vertical-menu a:hover {
-    background-color: plum;
-}
-
-.vertical-menu a.active {
+/* .menu a.active {
     background-color: yellow;
     color: greenyellow;
-}
-.grid{
+} */
+
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 article {
     padding: 20px;
-
 }
 
-.image{
+.image {
     display: block;
 }
 
-.article-image{
-    width:100%;
+.article-image {
+    width: 100%;
 }
-footer{
-    display: flex;
 
+footer {
+    margin: 20;
+    background-color: plum;
 }
+
 input {
     border: 0;
     padding: 10px;
     font-size: 12px;
-  }
-  input[type="submit"] {
-    background: plum;
+}
+
+input[type="submit"] {
+    background: darkmagenta;
     color: white;
-  }
+}
 
-  /* media query fixed size */
+p {
+    text-align: right;
+}
+/* media query fixed size */
 
-  /* resize images using preview */
+/* resize images using preview */

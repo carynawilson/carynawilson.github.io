@@ -6,16 +6,32 @@
 //
 $('.first-name').hover(function () {
     $('.h1-name').addClass('hover');
-    $('.h1-name').html('Karina A. Wilson');
-    // $(this).html('卫巧巧');
+    $('.first-name').html('Karina ');
+
+}, function() {
+    $('.h1-name').removeClass('hover');
+    $('.first-name').html('Caryn ');
+    
+})
+
+$('.last-name').hover(function () {
+    $('.h1-name').addClass('hover');
+    $('.first-name').html('卫 ');
+    $('.last-name').html('巧巧');
+    $('.kanye').html('')
+   
     console.log('it worked')
 }, function() {
     console.log('it rocks')
     $('.h1-name').removeClass('hover');
-    $('.h1-name').html('Caryn A. Wilson');
-    
+    $('.first-name').html('Caryn ');
+    $('.last-name').html('Wilson');
+    $('.kanye').html('A.')
 })
 
+$('#contact-footer').focus(function (){
+
+})
 // $('h1').animate({
 //     'width': '500px',
 //     'height': '80px'

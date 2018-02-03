@@ -10,20 +10,30 @@
 
 <body>
     <header>
-        <h1 class="h1-name"> <span class="first-name">Caryn </span>A. <span class="last-name">Wilson</span> </h1>
-        <img class="image profile-pic" src="IMG_1924.JPG" alt="Smiley face">
-        <span>
-            I'm a multidisciplinary journalist working in New York City. vision vision vision vision.
-        </span>
-        <nav class="vertical-menu">
-            <a href="#contact-footer"> About & Contact </a>
-            <a href=""> Projects </a>
+        <nav class="menu">
+            <a href="#grid-id"> Projects </a>
+            <a href="#contact-footer"> Contact</a>
             <a href=""> tktktk </a>
         </nav>
+        <div class="h1-wrap">
+            <h1 class="h1-name">
+                <span class="first-name">Caryn </span>
+                <span class="kanye">A.</span>
+                <span class="last-name">Wilson</span>
+            </h1>
+        </div>
+        <img class="image profile-pic" src="IMG_1924.JPG" alt="Smiley face">
+        <div class="vision-statement">
+            I'm a multidisciplinary journalist working in New York City. The projects you'll find below were out of
+            <span style="background-color: plum"> inspiration to develop formats for explaining international news to readers (particularly millennial women)</span>who
+            want to know about international news, but, who do not consume it on a day-to-day basis. I'm most
+            <span style="background-color: plum">passionate about crafting accessible language</span>with the mission to expose the next generation to quality
+            journalism so they are informed and empowered.
+        </div>
         <h2></h2>
     </header>
     <main>
-        <div class="grid">
+        <div id="grid-id" class="grid">
             <article>
                 <a href="https://nyti.ms/2klgkiV" target="_blank">
                     <div class="image-wrap">
@@ -81,11 +91,13 @@
 
     </main>
     <footer id="contact-footer">
-        <input type="email" placeholder="Your email">
-        <input type="submit">
+        <form action="https://formspree.io/caryn.a.wilson@gmail.com" method="POST">
+            <input type="email" placeholder="Your email" name="_replyto">
+            <input type="submit" value="Send">
+        </form>
+        <p>General Assembly taught me how to code this!</p>
     </footer>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
