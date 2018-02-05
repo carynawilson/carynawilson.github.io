@@ -1,20 +1,37 @@
 body {
     background-color: white;
     font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
 }
 
-article a {
+nav {
+    margin-right: 20px;
+    font: "Lato";
+    background-color: #efefef;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
     text-decoration: none;
-    color: #333;
+    color: navy;
 }
 
-a:hover {
-    text-decoration: underline;
+header {
+    padding: 10px;
 }
-
 
 .h1-wrap {
     min-height: 70px;
+    padding-top: 60px;
 }
 
 h1 {
@@ -22,6 +39,7 @@ h1 {
     color: black;
     text-align: center;
     font-size: 40px;
+    font-weight: lighter;
     display: flex;
     justify-content: center;
 }
@@ -39,38 +57,30 @@ h1 {
 }
 
 .hover {
-    color: plum;
+    color: #F31e09;
+}
+
+main {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.bio {
+    display: flex;
+    align-content: flex-start;
+    padding: 20px;
 }
 
 .profile-pic {
     width: 82px;
-    display: block;
-    align-content: center;
+    height: 100%;
+    margin-right: 10px;
 }
 
 .vision-statement {
-    text-align: center;
+    text-align: left;
+    line-height: 21px;
 }
-nav {
-    color: black;
-    margin-right: 20px;
-    font: "Lato";
-   background-color: lightgray;
-    font-weight: bold;
-    position: fixed;
-    width: 100%;
-	left: 0;
-	top: 0;
-    font-size: 20px;
-    text-decoration: none;
-    
-	/* transition: all 2s ease-in-out; */
-}
-
-/* .menu a.active {
-    background-color: yellow;
-    color: greenyellow;
-} */
 
 .grid {
     display: grid;
@@ -79,6 +89,15 @@ nav {
 
 article {
     padding: 20px;
+}
+
+article a {
+    text-decoration: none;
+    color: #333;
+}
+
+article a:hover {
+    text-decoration: underline;
 }
 
 .image {
@@ -90,24 +109,41 @@ article {
 }
 
 footer {
-    margin: 20;
-    background-color: plum;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    min-height: 50px;
+    max-width: 1050px;
+    border-top: 1px solid #F31e09;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    line-height: 30px;
 }
 
 input {
-    border: 0;
+    border: 1px solid #ccc;
     padding: 10px;
     font-size: 12px;
 }
 
 input[type="submit"] {
-    background: darkmagenta;
+    background: navy;
     color: white;
 }
 
-p {
-    text-align: right;
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .grid {
+        display: block;
+    }
+    .article {
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+    }
 }
-/* media query fixed size */
-
-/* resize images using preview */

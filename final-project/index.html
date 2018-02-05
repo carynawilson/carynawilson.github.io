@@ -4,17 +4,25 @@
 <head>
     <title> Caryn Wilson </title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+    <nav class="menu">
+        <a href="#grid-id"> Projects </a>
+        <a href="#contact-footer"> Contact</a>
+        <!-- <a href=""> tktktk </a> -->
+        <a href="https://twitter.com/carynawilson?lang=en">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/carynawilson/carynawilson.github.io">
+            <i class="fab fa-github"></i>
+
+        </a>
+    </nav>
     <header>
-        <nav class="menu">
-            <a href="#grid-id"> Projects </a>
-            <a href="#contact-footer"> Contact</a>
-            <a href=""> tktktk </a>
-        </nav>
         <div class="h1-wrap">
             <h1 class="h1-name">
                 <span class="first-name">Caryn </span>
@@ -22,19 +30,20 @@
                 <span class="last-name">Wilson</span>
             </h1>
         </div>
-        <img class="image profile-pic" src="IMG_1924.JPG" alt="Smiley face">
-        <div class="vision-statement">
-            I'm a multidisciplinary journalist working in New York City. The projects you'll find below were out of
-            <span style="background-color: plum"> inspiration to develop formats for explaining international news to readers (particularly millennial women)</span>who
-            want to know about international news, but, who do not consume it on a day-to-day basis. I'm most
-            <span style="background-color: plum">passionate about crafting accessible language</span>with the mission to expose the next generation to quality
-            journalism so they are informed and empowered.
-        </div>
-        <h2></h2>
     </header>
     <main>
+        <div class="bio">
+            <img class="profile-pic" src="IMG_1924.JPG" alt="Smiley face">
+            <div class="vision-statement">
+                Hi, I made this site! When I'm not coding in HTML, CSS and JavaScript, I'm reimaging the voice of The New York Times on Snapchat
+                Discover. I'm most
+                <span style="border-bottom: #F31e09 solid .25px;">passionate about crafting accessible language</span> with the mission to expose the next generation to quality
+                journalism.
+                <span style="border-bottom: #F31e09 solid .25px;">I have reported from China and speak Mandarin and Spanish.</span>
+            </div>
+        </div>
         <div id="grid-id" class="grid">
-            <article>
+            <article class="article">
                 <a href="https://nyti.ms/2klgkiV" target="_blank">
                     <div class="image-wrap">
                         <img class="article-image image" src="imgs/germanyattacks2.jpg">
@@ -47,7 +56,7 @@
                     </div>
                 </a>
             </article>
-            <article>
+            <article class="article">
                 <a href="https://nyti.ms/2jIq0Bv" target="_blank">
                     <div class="image-wrap">
                         <img class="article-image image" src="imgs/italy-earthquake.jpg">
@@ -60,7 +69,7 @@
                     </div>
                 </a>
             </article>
-            <article>
+            <article class="article">
                 <a href="https://nyti.ms/2FCeijN" target="_blank">
                     <div class="image-wrap">
                         <img class="article-image image" src="imgs/gilkey1-jumbo.jpg">
@@ -73,7 +82,7 @@
                     </div>
                 </a>
             </article>
-            <article>
+            <article class="article">
                 <a href="https://nyti.ms/2kwfsm5" target="_blank">
                     <div class="image-wrap">
                         <img class="article-image image" src="imgs/UN-explainer2.jpg">
@@ -95,7 +104,7 @@
             <input type="email" placeholder="Your email" name="_replyto">
             <input type="submit" value="Send">
         </form>
-        <p>General Assembly taught me how to code this!</p>
+        <p>caryn.a.wilson@gmail.com</p>
     </footer>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/app.js"></script>
