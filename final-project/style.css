@@ -134,9 +134,9 @@ input[type="submit"] {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media handheld and (max-width: 400px) {
     body {
-        width: 100%;
+        width: 80%;
     }
     .grid {
         display: block;
